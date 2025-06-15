@@ -6,7 +6,7 @@ import { Festividad } from '../models/festividades';
 @Injectable({
   providedIn: 'root'
 })
-export class Festividades {
+export class FestividadesService {
 
   private url = "https://raw.githubusercontent.com/steevenmendozau/datos-turismo-ecuador-/refs/heads/main/festividades.json";
 
