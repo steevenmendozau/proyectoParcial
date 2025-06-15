@@ -1,0 +1,38 @@
+.festividades-wrapper {
+    background: rgba(30, 30, 30, 0.75);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.fest-card {
+    background-color: rgba(0, 0, 0, 0.65);
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #f0f0f0;
+}
+
+.fest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+.fest-card img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.fest-card h5 {
+    color: #ffcc00;
+    font-weight: 600;
+}
+
+.fest-card .card-text strong {
+    color: #ccc;
+}

@@ -1,1 +1,20 @@
-<p>menu works!</p>
+<div class="container">
+    <nav class="nav-menu glassy-navbar my-4 mx-auto p-2 d-flex justify-content-center flex-wrap rounded-4 shadow-lg">
+        <a class="nav-link px-4 py-2" routerLink="/inicio" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">
+            Inicio
+        </a>
+        <a class="nav-link px-4 py-2" routerLink="/regiones" routerLinkActive="active">
+            Regiones
+        </a>
+        <a class="nav-link px-4 py-2" routerLink="/gastronomia" routerLinkActive="active">
+            Gastronomía
+        </a>
+        <a class="nav-link px-4 py-2" routerLink="/festividades" routerLinkActive="active">
+            Festividades
+        </a>
+        <a class="nav-link px-4 py-2" routerLink="/contacto" routerLinkActive="active">
+            Contacto
+        </a>
+    </nav>
+</div>
