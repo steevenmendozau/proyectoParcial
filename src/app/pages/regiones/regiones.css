@@ -1,0 +1,24 @@
+.region-card {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  border: none;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+.region-carousel {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.region-img {
+  height: 500px;
+  object-fit: cover;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
