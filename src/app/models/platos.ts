@@ -1,5 +1,5 @@
 export interface Plato {
-  nombre: string;
+  plato: string;
   descripcion: string;
   imagen: string;
   region: string;

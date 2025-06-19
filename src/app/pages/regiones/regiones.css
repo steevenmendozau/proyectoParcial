@@ -6,7 +6,18 @@
   border: none;
 }
 
-.card-title {
+.regiones-wrapper {
+  background: rgba(30, 30, 30, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  border: none;
+}
+
+.region-card .card-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: #ffcc00;
