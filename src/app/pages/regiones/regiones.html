@@ -1,1 +1,31 @@
-<p>regiones works!</p>
+<section class="container my-5">
+  <h2 class="text-center text-warning mb-4">Regiones del Ecuador</h2>
+
+  <div class="row g-4">
+    <div class="col-md-6" *ngFor="let region of regiones; let i = index">
+      <div class="card region-card h-100">
+        <div class="card-body">
+          <h5 class="card-title text-light">{{ region.nombre }}</h5>
+          <p class="card-text text-white small">{{ region.descripcion }}</p>
+        </div>
+
+        <div class="carousel slide region-carousel" [id]="'carousel' + i" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div
+              class="carousel-item"
+              [class.active]="j === 0"
+              *ngFor="let img of region.imagenes; let j = index">
+              <img [src]="img" class="d-block w-100 region-img" [alt]="region.nombre + ' ' + (j+1)">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel' + i" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel' + i" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

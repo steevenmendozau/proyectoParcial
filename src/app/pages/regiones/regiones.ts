@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RegionesService } from '../../services/regiones';
+import { Region } from '../../models/region';
 
 @Component({
+  standalone: true,
   selector: 'app-regiones',
-  imports: [],
   templateUrl: './regiones.html',
-  styleUrl: './regiones.css'
+  styleUrls: ['./regiones.css'],
+  imports: [CommonModule]
 })
-export class Regiones {
+export class RegionesComponent implements OnInit {
+  regiones: Region[] = [];
 
+  constructor(private regionesService: RegionesService) {}
+
+  ngOnInit(): void {
+    this.regionesService.obtenerRegiones().subscribe(data => {
+      this.regiones = data;
+    });
+  }
 }
